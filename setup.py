@@ -659,7 +659,7 @@ con = sqlite3.connect('dashboard.db')
 cursor = con.cursor()
 cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
 tableList = cursor.fetchall()
-if tableList is None:
+if len(tableList) < 1:
 	createDb()
 con.close()
 updateCoinTable()
