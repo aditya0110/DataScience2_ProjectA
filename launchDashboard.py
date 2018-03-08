@@ -53,7 +53,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
         options=[
             {'label': 'Bitcoin', 'value': 'BTC'},
 	    {'label': 'Bitcoin Cash', 'value': 'BCH'},
-            {'label': 'Etherium', 'value': 'ETH'},
+            {'label': 'Ethereum', 'value': 'ETH'},
 	    {'label': 'Litcoin', 'value': 'LTC'},
             {'label': 'Ripple', 'value': 'XRP'}
         ],
