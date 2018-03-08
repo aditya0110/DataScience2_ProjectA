@@ -655,7 +655,13 @@ def createDb():
 	conn.commit() #save the changes
 	conn.close()
 
-createDb()
+con = sqlite3.connect('dashboard.db')
+cursor = con.cursor()
+cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+tableList = cursor.fetchall()
+if tableList is None:
+	createDb()
+con.close()
 updateCoinTable()
 updateICO()
 performanceBCH()
