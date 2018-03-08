@@ -20,3 +20,7 @@ pip install dash_core_components
 pip install dash_html_components
 
 pip install quandl
+
+After the above installations run setup.py
+
+After setup.py is run successfully(takes some time to train classifier) run launchDashboard.py
