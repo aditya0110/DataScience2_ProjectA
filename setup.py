@@ -355,7 +355,7 @@ def performanceETH():
     reddit_selftext=[]
     hdr = {'User-Agent': 'windows:r/bitcoin.single.result:v1.0' +
 			   '(by /u/Blackhawk518)'}
-    url = 'https://www.reddit.com/r/Etherium/.json'
+    url = 'https://www.reddit.com/r/Ethereum/.json'
     req = requests.get(url, headers=hdr)
     json_data = json.loads(req.text)
 
