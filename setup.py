@@ -605,7 +605,7 @@ def updateCoinTable():
 	conn.close()
 
 def updateICO():
-	utcMap = {"UTC+0":"GBR","UTC+3":"RUS","UTC--8":"USA","UTC+1":"DEU","UTC--4":"BRA","UTC--7":"CAN","UTC--5":"PER","UTC+7":"THA"}
+	utcMap = {"UTC+0":"GBR","UTC+3":"RUS","UTC--8":"USA","UTC+1":"DEU","UTC--4":"BRA","UTC--7":"CAN","UTC--5":"PER","UTC+7":"THA","UTC+2":"ESP","UTC+11":"FIN"}
 	response = requests.get("https://api.icowatchlist.com/public/v1/upcoming")
 	data=json.loads(response.text)
 	icos= data["ico"]["upcoming"]
